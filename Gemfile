@@ -7,8 +7,8 @@ gem 'rails', '4.2.0'
 gem 'sqlite3'
 # ActiveLdap for communication with LDAP
 gem 'activeldap', require: 'active_ldap/railtie'
-gem 'net-ldap', '~> 0.11'
-gem "devise_ldap_authenticatable", :git => "git://github.com/cschiewek/devise_ldap_authenticatable.git"
+gem 'net-ldap', '~> 0.16'
+gem "devise_ldap_authenticatable", :git => "https://github.com/cschiewek/devise_ldap_authenticatable.git"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.1'
@@ -26,7 +26,7 @@ gem 'jquery-ui-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
@@ -82,7 +82,9 @@ gem 'devise'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 # Gem for obfuscating profile images name
-gem 'digest'
+#gem 'digest'
+#gem "digest", :git => "https://github.com/ruby/digest.git"
+
 
 # Gem for uploading images
 gem 'carrierwave'
